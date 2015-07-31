@@ -1,1 +1,30 @@
 
+EVENT
+A Mechanism for communication between objects
+Used in building Loosely coupled applications
+Helps extending applications
+
+public class VideoEncoder {
+	public void Encode (Video video)
+	{
+		//Encoding logic
+		
+		mailservice.send(new Mail());
+		
+		//if you want to add text message
+		mailservice.send(new Text());
+	}
+}
+
+Delegate is agreement/contract between publisher and subscriber
+Determines the signature of the event handler method is subscriber
+
+Encapsultion: Hide Internal details of objects, hide complexity/ briging down the complexity
+Abstraction: focus on behaviour of object/ showing only neccessary item/ what does it need in case of customer class we need custname and no only
+
+SOLID
+Single responsibilty : there is no more than one reason to change the class, class has single responsibility
+Open closed : Module should open for extenstion but closed for modification, modification should be minimal
+LS: 
+DI: High level module should not depend on low level module, abstraction
+IS: many client specific interface are better than one interface
